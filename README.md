@@ -1,7 +1,7 @@
 # Foodbox Counter
 ## Setup 
-### Missing project files
-Download missing files from the links  
+### Downloading Weights
+Download weights files from the following links  
 ```
 curl -L https://www.dropbox.com/sh/fo1nteiajps64wf/AAC8pQcSKRIvwY06UJ3MuyBHa?dl=1 > tracker.zip
 unzip -d tracker tracker.zip
@@ -10,6 +10,9 @@ unzip -d tracker tracker.zip
 curl -L https://www.dropbox.com/sh/vpt9l0mcxs6iy3c/AADG59WBuNR6hDK3UK0LgZNIa?dl=0 > weights.zip
 unzip -d weights weights.zip
 ```
+#### OneDrive links
+`https://cpfito365.sharepoint.com/:f:/r/sites/CPFROBOTICS/Shared%20Documents/weights?csf=1&web=1&e=Sb0sJp`
+`https://cpfito365.sharepoint.com/:f:/r/sites/CPFROBOTICS/Shared%20Documents/tracker?csf=1&web=1&e=mHQvvU`
 
 ### Docker
 ```
@@ -26,7 +29,7 @@ Install the binaries in the docker folder and install OpenCV.
 ### Training
 ![alt text](git/nongjok-train.jpg)
 #### Dataset creation
-Annotate in PASCAL VOC format for EfficientDet and YOLOv3 or annotate in YOLO format for YOLOv3  
+Annotate in PASCAL VOC format for EfficientDet and YOLOv3 or annotate in YOLO format for YOLOv3 (e.g. labelImg: https://github.com/tzutalin/labelImg)  
 ##### YOLOv3
 After annotation, run `proportion.py` and `rename.py` on dataset folder.  
 Make the corresponding configuration files in folder as follows,  
@@ -101,5 +104,3 @@ python counter.py \
     --save-labels \
     --view
 ```
-
-
