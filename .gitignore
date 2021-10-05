@@ -5,6 +5,12 @@ __pycache__/
 
 # C extensions
 *.so
+*~
+*#
+
+# Weights
+weights/
+tracker/
 
 # Distribution / packaging
 .Python
